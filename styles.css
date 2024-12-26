@@ -1,36 +1,37 @@
+/* General body styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  text-align: center;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
+/* Header styling */
 header {
   background-color: #333;
   color: white;
   padding: 20px;
-  text-align: center;
 }
 
+/* Gallery styling */
 #gallery {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  flex-wrap: wrap;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  margin-top: 20px;
 }
 
+/* Individual photo styling */
 .photo {
-  width: 30%;
-  margin-bottom: 20px;
+  margin: 20px 0; /* Add space between photos */
+  text-align: center;
 }
 
 .photo img {
-  width: 100%;
-  border-radius: 8px;
+  width: 80%; /* Adjust image size to fit the container */
+  max-width: 600px; /* Prevent images from becoming too large */
+  height: auto;
 }
 
-.photo p {
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-}
